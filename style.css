@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --base-white: #ffffff;
+  --base-gray: rgb(118, 113, 113);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #20232d;
+  background: linear-gradient(261deg, #20232d 0%, #b7363b 45%, #8ba8c1 100%);
+  background-repeat: no-repeat;
+  color: var(--base-white);
+  padding: 3rem 7rem 3rem 5rem;
+}
+
+@media (max-width: 900px) {
+  body {
+    padding: 3rem;
+  }
+}
+
+*:focus {
+  outline: none;
+}
+
+.main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6rem;
+}
+
+@media (max-width: 1024px) {
+  .main section {
+    gap: 3rem;
+  }
+}
+
+.main section .logo {
+  background-color: var(--base-white);
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 0.2rem 1rem;
+}
+
+.main section .logo h1 {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.main section .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+@media (max-width: 540px) {
+  .main section .box {
+    width: unset;
+  }
+}
+
+.main section .box .searchbar {
+  border-bottom: 1px solid var(--base-white);
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding-bottom: .5rem;
+}
+
+@media (max-width: 540px) {
+  .main section .box .searchbar {
+    display: none;
+  }
+}
+
+.main section .box .searchbar form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: .5rem;
+}
+
+.main section .box .searchbar form button {
+  background-color: transparent;
+  border: none;
+}
+
+.main section .box .searchbar form button img {
+  width: 1rem;
+}
+
+.main section .box .searchbar form input {
+  background-color: transparent;
+  border: none;
+  width: 20rem;
+}
+
+@media (max-width: 700px) {
+  .main section .box .searchbar form input {
+    width: 10rem;
+  }
+}
+
+.main section .box .searchbar form ::-webkit-input-placeholder {
+  color: var(--base-white);
+}
+
+.main section .box .searchbar form :-ms-input-placeholder {
+  color: var(--base-white);
+}
+
+.main section .box .searchbar form ::-ms-input-placeholder {
+  color: var(--base-white);
+}
+
+.main section .box .searchbar form ::placeholder {
+  color: var(--base-white);
+}
+
+.main section .box .links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  gap: 1rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.main section .box .links ul li {
+  text-transform: uppercase;
+  font-size: .9rem;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .main .hero {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 540px) {
+  .main .hero {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 540px) {
+  .main .hero {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 540px) {
+  .main .hero .grid {
+    margin-top: 3rem;
+  }
+}
+
+.main .hero .grid h1 {
+  font-size: 1rem;
+  font-weight: 400;
+  padding-top: .5rem;
+}
+
+.main .hero .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .hero .box .text {
+  z-index: 10;
+}
+
+.main .hero .box .text h1 {
+  font-size: 5rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .main .hero .box .text h1 {
+    margin-top: 3rem;
+    font-size: 3rem;
+    max-width: 35rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .main .hero .box .text h1 {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 430px) {
+  .main .hero .box .text h1 {
+    font-size: 1.3rem;
+    margin-top: 0;
+  }
+}
+
+.main .hero .box .text p {
+  max-width: 25rem;
+}
+
+.main .hero .box .pictures .one {
+  width: 30rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.main .hero .box .pictures .two {
+  width: 5rem;
+  position: absolute;
+  bottom: 4rem;
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .main .hero .box .pictures .two {
+    right: 0;
+    bottom: 0rem;
+  }
+}
+
+.main .objects {
+  margin-top: 8rem;
+}
+
+.main .objects .grid h1 {
+  font-weight: 300;
+}
+
+.main .objects .grid p {
+  font-weight: 200;
+}
+
+@media (max-width: 540px) {
+  .main .objects {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.main .objects .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+}
+
+@media (max-width: 670px) {
+  .main .objects .box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.main .objects .box .pictures {
+  position: relative;
+  z-index: -1;
+}
+
+.main .objects .box .pictures .one {
+  width: 20rem;
+}
+
+@media (max-width: 760px) {
+  .main .objects .box .pictures .one {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 200px) {
+  .main .objects .box .pictures .one {
+    width: 8rem;
+  }
+}
+
+.main .objects .box .pictures .two {
+  width: 10rem;
+  position: absolute;
+  right: -5rem;
+  bottom: 0;
+}
+
+@media (max-width: 760px) {
+  .main .objects .box .pictures .two {
+    width: 7rem;
+  }
+}
+
+@media (max-width: 670px) {
+  .main .objects .box .pictures .two {
+    right: 10rem;
+  }
+}
+
+.main .objects .box .text {
+  text-align: end;
+}
+
+@media (max-width: 670px) {
+  .main .objects .box .text {
+    text-align: start;
+  }
+}
+
+.main .objects .box .text h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .main .objects .box .text h1 {
+    font-size: 3rem;
+  }
+}
+
+.main .objects .box .text p {
+  font-size: .9rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.main .objects .box .text button {
+  padding: .5rem 1.3rem;
+  border: none;
+}
+
+@media (max-width: 540px) {
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+/*# sourceMappingURL=style.css.map */
